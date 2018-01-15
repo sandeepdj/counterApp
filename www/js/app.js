@@ -119,6 +119,29 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova','ionic-toa
     }
   })
 
+  .state('app.productsAdd', {
+    url: '/productsAdd',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/product-add.html',
+        controller: 'ProductCtrl'
+      }
+    }
+  })
+
+  
+  
+  .state('app.product/:prodId', {
+    url: '/product/:prodId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/product-details.html',
+        controller: 'ProductCtrl'
+      }
+    }
+  })
+
+
   .state('app.NewCustomer', {
     url: '/NewCustomer',
     views: {

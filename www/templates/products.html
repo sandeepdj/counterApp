@@ -1,5 +1,28 @@
-<ion-view view-title="Product">
-        <ion-content>
-          <h1>Product</h1>
-        </ion-content>
+<ion-view view-title="Products List">
+  <ion-floating-button click="addProduct()" has-footer="false" button-color="#F25767" icon="ion-plus" iconColor="#fff">
+  </ion-floating-button>
+  <ion-content>
+    <div class="list">
+      <div class="item bgblue toptra">
+        <label class="item-input-wrapper lbwhite">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="search" placeholder="Search product">
+        </label>
+      </div>
+      <a class="item item-icon-right" ng-repeat="product in products" href="#/app/product/{{product.pid}}">
+        <div class="prCount">
+          <p>{{$index+1}}</p>
+        </div>
+        <div class="prText">
+          <p>
+            <b>{{product.name}}</b>
+          </p>
+          <p>HSN : {{product.HSN}}
+            <span class="gstlabel"> GST : {{product.GST}}</span>
+          </p>
+        </div>
+        <i class="icon ion-ios-arrow-right"></i>
+      </a>
+    </div>
+  </ion-content>
 </ion-view>

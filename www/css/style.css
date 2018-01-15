@@ -8,6 +8,11 @@
     
     
  }
+ .custom-button{
+     background-color: #ee6e73;
+     border-color: #ee6e73;
+     color: #fff;
+ }
 .text-center{
     text-align: center;
 }
@@ -173,8 +178,22 @@
     width:60%;
  }
 
+.label-border-0 .item{
+    border-width: 0px;
+ }
+.label-border-0 .item-input input{
+    border-bottom: 1px solid #ccc !important;
+}
 
-
+.add-photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid green;
+    padding: 10px;
+    /* font-size: 13px; */
+    line-height: 1;
+}
 
   /************** PROFILE PAGE *************/
 .pro-top{
@@ -245,3 +264,68 @@
     border-bottom: 1px solid #fff !important;
     color: #fff  !important;
  }
+
+
+ /************ PRODUCTS *************************/
+ .bgblue{
+    background-color: #387ef5;    
+ }
+ .lbwhite{
+     background-color: #fff;
+ }
+ .toptra{
+    border-top: transparent;
+ }
+ .prCount{
+    position: relative;
+    float: left;
+}
+ .prCount p{
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+   
+     border-radius: 50%;
+     margin-bottom: 0px;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+ }
+ .prText{
+    position: relative;
+    float: left;
+    width: auto;
+    padding-left: 10px;
+ }
+
+ .prCount p:nth-child(odd) {
+    border: 1px solid #ef717e;
+    background-color: #ef717e;
+    color: #fff;
+}
+.gstlabel{
+     color: #388e3c;
+     font-weight: bold;
+}
+.editItm .input-label{
+    color: #2e7d32;
+}
+.editItm .item-input{
+    border: 0px;
+    border-bottom: 1px solid;
+}
+.editItm .item-select{
+    margin-top: 5px;
+}
+.edit-title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.paidAmt{
+    color: #2e7d32 !important;
+}
+.balanceAmt{
+    color: #c62828  !important;
+}

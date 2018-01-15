@@ -281,8 +281,163 @@ angular.module('starter.controllers', [])
   })
   .controller('SalesCtrl', function ($scope, $stateParams, $state) {
 
+    $scope.salesList = [
+      {
+        "company":"Infosys Pvt Ltd",
+        "totalItems":10,
+        "total":25000,
+        "paid":15000,
+        "balance":10000,
+      },
+      {
+        "company":"Amezon India Pvt Ltd",
+        "totalItems":5,
+        "total":1000,
+        "paid":5000,
+        "balance":5000,
+      },
+      {
+        "company":"Wipro India Pvt Ltd",
+        "totalItems":10,
+        "total":25000,
+        "paid":15000,
+        "balance":10000,
+      },
+      {
+        "company":"Infosys Pvt Ltd",
+        "totalItems":10,
+        "total":25000,
+        "paid":15000,
+        "balance":10000,
+      },
+      {
+        "company":"Infosys Pvt Ltd",
+        "totalItems":10,
+        "total":25000,
+        "paid":15000,
+        "balance":10000,
+      },
+      {
+        "company":"Amezon India Pvt Ltd",
+        "totalItems":5,
+        "total":1000,
+        "paid":5000,
+        "balance":5000,
+      },
+      {
+        "company":"Wipro India Pvt Ltd",
+        "totalItems":10,
+        "total":25000,
+        "paid":15000,
+        "balance":10000,
+      },
+      {
+        "company":"Infosys Pvt Ltd",
+        "totalItems":10,
+        "total":25000,
+        "paid":15000,
+        "balance":10000,
+      }
+    ]
+
+
   })
-  .controller('ProductCtrl', function ($scope, $stateParams, $state) {
+  .controller('ProductCtrl', function ($scope, $stateParams, $state, $filter) {
+
+    $scope.products = [{
+      "pid": 1,
+      "name": "CHEMLOK -205",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+      
+    },
+    {
+      "pid": 2,
+      "name": "CHEMLOK -220 ",
+      "HSN": "45124578",
+      "GST": "18",
+      "unit":'test'
+    },
+    {
+      "pid": 3,
+      "name": "Packaging And Forwarding",
+      "HSN": "35069190",
+      "GST": "0",
+      "unit":'test'
+    },
+    {
+      "pid": 4,
+      "name": "Parl G	",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    },
+    {
+      "pid": 5,
+      "name": "Marie Gold	",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    },
+    {
+      "pid": 6,
+      "name": "Cadbury Celebration",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    } 
+    ,
+    {
+      "pid": 7,
+      "name": "Parl G	",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    },
+    {
+      "pid": 8,
+      "name": "Marie Gold	",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    },
+    {
+      "pid": 9,
+      "name": "Cadbury Celebration",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    },
+    {
+      "pid": 10,
+      "name": "Marie Gold	",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    },
+    {
+      "pid": 11,
+      "name": "Cadbury Celebration",
+      "HSN": "35069190",
+      "GST": "15",
+      "unit":'test'
+    }  
+  ];
+
+   var prodId = $stateParams.prodId;
+  $scope.getPdetails=function(){
+    getPdetails(prodId);
+  }
+
+    function getPdetails(prodId){
+      $scope.ddets= $filter('filter')($scope.products,{"pid":prodId});
+      $scope.pdetails =  $scope.ddets[0];
+     }
+
+     $scope.addProduct=function(){
+       $state.go('app.productsAdd');
+     }
 
   })
 

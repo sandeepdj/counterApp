@@ -1,0 +1,40 @@
+<ion-view view-title="Add New Product">
+        <ion-content>
+       
+          <div class="row">
+            <div class="col">
+              <div class="list editItm">
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Product Name</span>
+                  <input type="text" placeholder="Product Name" ng-model="pdetails.name">
+                </label>
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">HSN No</span>
+                  <input type="text" placeholder="HSN No" ng-model="pdetails.HSN">
+                </label>
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Item Unit</span>
+                  <input type="text" placeholder="Item Unit" ng-model="pdetails.unit">
+                </label>
+                <label class="item item-input item-select">
+                      <div class="input-label">
+                        GST %
+                      </div>
+                      <select ng-model="pdetails.GST">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="18">18%</option>
+                        <option value="28">28%</option>
+                      </select>
+                    </label>
+      
+                  <button class="button button-full custom-button">
+                         Add Product
+                  </button>
+      
+              </div>
+            </div>
+          </div>
+         </ion-content>
+      </ion-view>
+      
