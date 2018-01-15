@@ -1,0 +1,135 @@
+<ion-view view-title="Profile">
+  <ion-content>
+    <div class="row pro-top">
+      <div class="col text-center">
+        <p>
+          <img ng-src="img/users/1.png" class="profile-img">
+        </p>
+        <p class="profile-name"> Sandeep Jadhav</p>
+        <p>Administator</p>
+      </div>
+    </div>
+    <div class="row profile-tabs">
+      <div class="col b-r-1" ng-click="shPersonal()" ng-class="{ 'activeTab' : personale}">
+        <a>Personal</a>
+      </div>
+      <div class="col b-r-1" ng-click="shProf()" ng-class="{ 'activeTab' : prof}">
+        <a>Professional</a>
+      </div>
+      
+      <div class="col" ng-click="shAccount()" ng-class="{ 'activeTab' : accnt}">
+        <a>Password </a>
+      </div>
+    </div>
+
+    <div class="row" ng-if="personale">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <div class="list list-inset cpassordFrom">
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Full Name</span>
+                <input type="text" placeholder="Full Name">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Mobile </span>
+                <input type="text" placeholder="Mobile">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Telephone </span>
+                <input type="text" placeholder="Telephone">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">EMail </span>
+                <input type="text" placeholder="EMail">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <button class="button button-outline button-positive">
+              Update Info
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" ng-if="prof">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <div class="list list-inset cpassordFrom">
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Company Name</span>
+                <input type="text" placeholder="Company Name">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Address Line 1 </span>
+                <input type="text" placeholder="Address Line 1">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Address Line 2 </span>
+                <input type="text" placeholder="Address Line 2">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">City </span>
+                <input type="text" placeholder="City">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">State </span>
+                <input type="text" placeholder="State">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">GST NO </span>
+                <input type="text" placeholder="GST NO">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">PAN No </span>
+                <input type="text" placeholder="PAN No">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <button class="button button-outline button-positive">
+              Update Pro Info
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="row" ng-if="accnt">
+      <div class="col">
+        <div class="row">
+          <div class="col text-center">
+            <p>CHANGE PASSWORD </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="list list-inset cpassordFrom">
+              <label class="item item-input item-floating-label">
+                <span class="input-label">New Password</span>
+                <input type="text" placeholder="New Password">
+              </label>
+              <label class="item item-input item-floating-label">
+                <span class="input-label">Confirm Password</span>
+                <input type="text" placeholder="Confirm Password">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <button class="button button-outline button-positive">
+              Update Password
+            </button>
+          </div>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

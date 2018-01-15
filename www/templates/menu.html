@@ -1,0 +1,61 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" width="250">
+    <ion-header-bar class="bar-stable user-left-profile">
+      <div class="title">
+        <p class="pro-img"> <img ng-src="img/icons/user.png"></p>
+        <p class="pro-name">Sandeep Jadhav</p>
+    </div>
+    </ion-header-bar>
+    <ion-content class="sidebar">
+      <ion-list class="leftMenu">
+        <ion-item menu-close  href="#/app/home">
+          <span class="menu-icon"><img ng-src="img/icons/home.png"></span>   <span class="menu-link"> Home</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/dashboard">
+          <span class="menu-icon"><img ng-src="img/icons/dashboard.png"></span>   <span class="menu-link"> Dashboard</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/sales">
+          <span class="menu-icon"><img ng-src="img/icons/sales1.png"></span>   <span class="menu-link"> Sales</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/products">
+          <span class="menu-icon"><img ng-src="img/icons/list.png"></span>   <span class="menu-link"> Products</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/customers">
+          <span class="menu-icon"><img ng-src="img/icons/group.png"></span>   <span class="menu-link"> Customers</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          <span class="menu-icon"><img ng-src="img/icons/mobile-purchase.png"></span>   <span class="menu-link"> Purchase</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          <span class="menu-icon"><img ng-src="img/icons/conversation.png"></span>   <span class="menu-link"> Vendors</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          <span class="menu-icon"><img ng-src="img/icons/stock.png"></span>  <span class="menu-link"> Stock</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          <span class="menu-icon"><img ng-src="img/icons/coin.png"></span>  <span class="menu-link"> Accounts</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/profile">
+          <span class="menu-icon"> <img ng-src="img/icons/profile.png"></span>  <span class="menu-link"> Profile</span>
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          <span class="menu-icon"> <img ng-src="img/icons/management.png"> </span>  <span class="menu-link"> Utilities</span>
+        </ion-item>
+
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

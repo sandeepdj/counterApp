@@ -1,0 +1,247 @@
+/* Empty. Add your own CSS if you like */
+ body{
+    font-family: 'Bree Serif', serif;
+    /* font-family: 'Arvo', serif; */
+
+    /* font-family: 'Bitter', serif; */
+    /* font-family: 'Merriweather', serif; */
+    
+    
+ }
+.text-center{
+    text-align: center;
+}
+.login-section{
+    background-color: #2b2929;
+    height: 100%;
+}
+/* .bgcolor{
+    background-color: #2b2929;
+    
+} */
+.login-header{
+    background: #fff;
+    text-align: center;
+    border-top: 5px solid #2b2929;
+ }
+ .sidebar{
+     top: 100px;
+ }
+ .user-left-profile{
+    background-color: #1e1f21 !important;
+    border-color: #1e1f21 !important; 
+    height: 100px;
+ 
+} 
+ .user-left-profile .title.title-left{
+     height: 100px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     
+ }
+ .login-body{
+     width: 100%;
+     padding-top: 40px;
+ }
+ .pro-img{
+     text-align: center;
+     margin-bottom: 0px;
+     height: 50px;
+ }
+ .pro-name{
+     text-align: center;
+     margin-bottom: 0px;
+     color: #fff;
+ }
+ .pro-img img{
+    height: 50px;
+    width: 50px;
+ }
+ .small-logo{
+    background: #fff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    border: 5px solid #fff;
+ }
+ .login-list{
+    padding: 20px;
+ }
+ .login-list .item{
+     border: 1px solid #fff;
+     background: transparent;
+     border-radius: 25px;
+     margin-bottom: 15px;
+ }
+ .login-list .item input{
+     color: #fff;
+   
+ }
+ .button-login{
+     background-color: #E91E63;
+     color: #fff;
+ }
+.home{
+    padding-top: 2%;
+}
+ 
+ .home img{
+    height: 50px;
+ }
+ .himgBox{
+    border-radius: 50%;
+    border: 2px solid #006DF0;
+    height: 80px;
+    width: 80px;
+    padding: 15px;
+ }
+ .hiconText{
+    width: 80px;
+    font-weight: bold;
+    font-size: 12px;
+ }
+
+ .leftMenu .item-content img{
+     height: 25px;
+ }
+ .leftMenu .item-content{
+   padding: 0;
+   background: #407ce7;
+ }
+ .leftMenu ion-item{
+     border-bottom: 0px;
+}
+ .leftMenu .menu-icon{
+    position: relative;
+    float: left;
+    background-color: rgb(46, 34, 34);
+    padding: 8px;
+ }
+ 
+ .leftMenu .menu-link{
+    position: relative;
+    float: left;
+    color: #fff;
+    padding: 10px 0px 0px 10px;
+ }
+
+
+
+
+
+
+ /************** CUSTOMER PAGE *************/
+.pull-right{
+    text-align: right;
+}
+ .clist .item{
+     padding: 5px;
+ }
+ .cicon, .cinfo, .cinfoLeft{
+     position: relative;
+     float: left;
+ }
+
+ .cicon{
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+ }
+ .cicon img{
+    width: 40px;
+    height: 40px;
+ }
+ 
+ .cinfoLeft{
+    border-left: 1px solid #111;
+    width: 20%;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+ }
+ .cinfoLeft .conein{
+    border-bottom: 1px solid;
+    margin-left: 4px;
+ }
+ .cinfoLeft .coneina{
+    margin-left: 4px;
+ }
+ .cicon{
+    width: 20%;
+ }
+ .cinfo{
+    width:60%;
+ }
+
+
+
+
+  /************** PROFILE PAGE *************/
+.pro-top{
+    background-color: #387ef5;
+    color: #fff;
+}
+ .profile-img{
+    height: 80px;
+    width: 80px;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+ }
+ .profile-name{
+     font-weight: bold;
+     font-size: 18px;
+     color: #fff;
+ }
+ .profile-tabs{
+    border: 1px solid #6090da;
+    padding: 0px;
+    text-align: center;
+    margin-top: 0px !important;
+ }
+ .b-r-1{
+    border-right: 1px solid #6090da;
+ }
+ .profile-tabs div{
+    padding: 8px;
+    cursor: pointer;
+}
+ .profile-tabs div:hover{
+     background-color: #6090da;
+  }
+
+ .profile-tabs div:hover a{
+     color: #fff;
+ }
+
+ .activeTab{
+    background-color: #6090da;
+ }
+
+ .activeTab a{
+     color: #fff;
+ }
+
+ .cpassordFrom{
+     margin: 0px;
+ }
+ .cpassordFrom .item-floating-label{
+    border: 0px;
+    border-bottom: 1px solid;
+ }
+ .bar-positive{
+    border-bottom: 0px !important;
+ }
+
+
+
+ /**************** DASHBOARD *******************/
+ .dash-top{
+    background-color: #387ef5;
+ }
+
+ .dateInput{
+    background-color: transparent;
+    border-bottom: 1px solid #fff !important;
+    color: #fff  !important;
+ }

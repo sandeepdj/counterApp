@@ -1,0 +1,23 @@
+ <ion-view view-title="Customers">
+        <ion-floating-button click="goNewCustomer()" has-footer="false" button-color="#e23376" icon="ion-plus" iconColor="#fff">
+            </ion-floating-button>
+        <ion-content>
+            <div class="list clist">
+                <a class="item" ng-repeat="cust in customerList" href="#/app/customers/{{cust.cid}}">
+                    <div class="cicon">
+                            <img ng-src="{{cust.photo}}">
+                    </div>
+                    <div class="cinfo">
+                        <p><b>{{cust.name}}</b></p>
+                        <p>Phone: {{cust.mobile}}</p>
+                        <p>E-mail: {{cust.email}}</p>
+                    </div>
+                    <div class="cinfoLeft pull-right">
+                            <p class="conein">{{cust.type}}</p>
+                            <p class="coneina">{{cust.amount}}</p>
+                    </div>
+                </a>
+            </div>                        
+        </ion-content>
+</ion-view>
+      
