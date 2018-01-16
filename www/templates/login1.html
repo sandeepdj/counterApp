@@ -1,13 +1,13 @@
-<ion-content>
-<div class="login-section">
-    <div class="login-header">
-        <img ng-src="img/logo.png" style="height:50px;">
-    </div>
-    <div class="login-body">
-        <p class="text-center">
-                <img ng-src="img/ca_4logo.png" class="small-logo">
-        </p>
-        <div class="list login-list">
+<ion-content class="login-section">
+    <div>
+        <div class="login-header">
+            <img ng-src="img/logo.png" style="height:50px;">
+        </div>
+        <div class="login-body">
+            <p class="text-center">
+                <img ng-src="img/dollor.png" class="small-logo">
+            </p>
+            <div class="list login-list">
                 <label class="item item-input">
                         <i class="icon ion-person placeholder-icon"></i>
                         <input type="text" placeholder="Username" ng-model="login.email" required>
@@ -16,11 +16,13 @@
                         <i class="icon ion-ios-unlocked placeholder-icon"></i>
                         <input type="password" placeholder="Password" ng-model="login.password" required>
                  </label>
-                <button class="button button-block button-login" ng-click="doLogin(login)">
+                <p class="text-center pad-top-15">
+                    <a class="button button-block button-login" ng-click="doLogin(login)">
                     Sign In
-                </button>
-         </div>
+                    </a>
+                </p>
+                <p class="text-center forget pad-top-8"><a>Forget the password ?</a></p>
+            </div>
+        </div>
     </div>
-</div>
 </ion-content>
- 
