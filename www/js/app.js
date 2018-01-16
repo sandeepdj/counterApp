@@ -184,8 +184,18 @@ angular.module('starter', ['ionic', 'starter.controllers','ngCordova','ionic-toa
     }
   })
 
-  
-  
+  .state('app.accounts', {
+    url: '/accounts',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/accounts.html',
+        controller: 'AccountCtrl'
+      }
+    }
+  })
+
+
+   
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/login');
 });

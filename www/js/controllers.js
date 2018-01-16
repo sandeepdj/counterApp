@@ -533,25 +533,84 @@ angular.module('starter.controllers', [])
     $scope.personale = true;
     $scope.prof = false;
     $scope.accnt = false;
-
     $scope.shPersonal = function() {
         $scope.personale = true;
         $scope.prof = false;
         $scope.accnt = false;
     }
-
     $scope.shProf = function() {
         $scope.personale = false;
         $scope.prof = true;
         $scope.accnt = false;
 
     }
-
     $scope.shAccount = function() {
         $scope.personale = false;
         $scope.prof = false;
         $scope.accnt = true;
     }
+})
 
+.controller('AccountCtrl',function($scope){
+    $scope.salesList = [{
+        "company": "Infosys Pvt Ltd",
+        "totalItems": 10,
+        "total": 25000,
+        "paid": 15000,
+        "balance": 10000,
+    },
+    {
+        "company": "Amezon India Pvt Ltd",
+        "totalItems": 5,
+        "total": 1000,
+        "paid": 5000,
+        "balance": 5000,
+    },
+    {
+        "company": "Wipro India Pvt Ltd",
+        "totalItems": 10,
+        "total": 25000,
+        "paid": 15000,
+        "balance": 10000,
+    },
+    {
+        "company": "Infosys Pvt Ltd",
+        "totalItems": 10,
+        "total": 25000,
+        "paid": 15000,
+        "balance": 10000,
+    },
+    {
+        "company": "Infosys Pvt Ltd",
+        "totalItems": 10,
+        "total": 25000,
+        "paid": 15000,
+        "balance": 10000,
+    },
+    {
+        "company": "Amezon India Pvt Ltd",
+        "totalItems": 5,
+        "total": 1000,
+        "paid": 5000,
+        "balance": 5000,
+    },
+    {
+        "company": "Wipro India Pvt Ltd",
+        "totalItems": 10,
+        "total": 25000,
+        "paid": 15000,
+        "balance": 10000,
+    },
+    {
+        "company": "Infosys Pvt Ltd",
+        "totalItems": 10,
+        "total": 25000,
+        "paid": 15000,
+        "balance": 10000,
+    }
+]
+
+$scope.dfromDate = new Date();
+$scope.dtoDate = new Date();
 
 })

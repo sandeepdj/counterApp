@@ -39,15 +39,16 @@ body {
 }
 
 .user-left-profile {
-    background-color: #1e1f21 !important;
-    border-color: #1e1f21 !important;
+    background-color: #3d7afd !important;
+    /* border-color: #3d7afd !important; */
     height: 100px;
-}
+ }
 
 .user-left-profile .title.title-left {
     height: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
+    
 }
 
 .login-body {
@@ -104,6 +105,7 @@ body {
 
 .home {
     padding-top: 2%;
+    background-color: #262727;
 }
 
 .home img {
