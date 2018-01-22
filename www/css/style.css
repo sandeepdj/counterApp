@@ -18,7 +18,8 @@ body {
 }
 
 .login-section {
-    background: linear-gradient(60deg, #3d7afd 0, #4c6df9 50%, #4a68ef 50%, #5b5ef4 100%);
+    background: url('../img/bg.jpg');
+    /* background: linear-gradient(60deg, #3d7afd 0, #4c6df9 50%, #4a68ef 50%, #5b5ef4 100%); */
     height: 100%;
 }
 
@@ -42,13 +43,12 @@ body {
     background-color: #3d7afd !important;
     /* border-color: #3d7afd !important; */
     height: 100px;
- }
+}
 
 .user-left-profile .title.title-left {
     height: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
 }
 
 .login-body {
@@ -82,19 +82,35 @@ body {
 }
 
 .login-list {
-    padding: 20px;
+    padding: 40px;
     margin-top: 20px;
 }
 
 .login-list .item {
-    border: 1px solid #5189ce;
-    background: #5189ce;
+    /* border: 1px solid #5189ce;
+    background: #5189ce; */
+    border: 1px solid #f9f9f9;
+    background: #f9f9f9;
     border-radius: 25px;
     margin-bottom: 15px;
+    padding: 4px;
 }
 
 .login-list .item input {
+    color: #111;
+    padding: 6px;
+}
+
+.login-list .ion-person,
+.login-list .ion-ios-unlocked {
+    background-color: #656877;
     color: #fff;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 20px;
 }
 
 .button-login {

@@ -17,11 +17,11 @@
             </div>
         </div>
         <div class="list clist">
-            <a class="item item-icon-right" ng-repeat="sale in salesList" href="#/app/customers/{{cust.cid}}">
+            <a class="item item-icon-right" ng-repeat="sale in salesList" href="#/app/accounts/{{cust.cid}}">
                 <div class="cinfo" style="width:50%">
                     <p><b>{{sale.company}}</b></p>
-                    <p>Total Items: {{sale.totalItems}}</p>
-                    <p>Sale Amount: {{sale.total}}</p>
+                    <p>Items: {{sale.totalItems}}</p>
+                    <p>Amount: {{sale.total}}</p>
                 </div>
                 <div class="cinfoLeft pull-right" style="width:40%">
                     <p class="conein paidAmt">Paid : {{sale.paid}}</p>
